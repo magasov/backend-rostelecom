@@ -6,7 +6,7 @@ const Item = require('./models/items');
 
 const app = express();
 
-mongoose.connect('mongodb+srv://magasov:12345@magasov.pnjqkm6.mongodb.net/?retryWrites=true&w=majority&appName=magasov', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('env', { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(cors());
 
